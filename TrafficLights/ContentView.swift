@@ -19,16 +19,19 @@ struct ContentView: View {
             Circle()
                 .foregroundColor(.red)
                 .frame(width: 100, height: 100)
+                .overlay(Circle().stroke(lineWidth: 4))
                 .opacity(redLight)
                 
             Circle()
                 .foregroundColor(.yellow)
                 .frame(width: 100, height: 100)
+                .overlay(Circle().stroke(lineWidth: 4))
                 .opacity(yellowLight)
                
             Circle()
                 .foregroundColor(.green)
                 .frame(width: 100, height: 100)
+                .overlay(Circle().stroke(lineWidth: 4))
                 .opacity(greenLight)
             Spacer()
             
